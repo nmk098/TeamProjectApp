@@ -13,6 +13,7 @@
 		C67A2C5F2938D507004E93D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C5D2938D507004E93D0 /* Main.storyboard */; };
 		C67A2C612938D508004E93D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C602938D508004E93D0 /* Assets.xcassets */; };
 		C67A2C642938D508004E93D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C622938D508004E93D0 /* LaunchScreen.storyboard */; };
+		C67A2C6C2938D9C6004E93D0 /* GoalsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C67A2C602938D508004E93D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C67A2C632938D508004E93D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C67A2C652938D508004E93D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoalsList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				C67A2C572938D507004E93D0 /* AppDelegate.swift */,
 				C67A2C592938D507004E93D0 /* SceneDelegate.swift */,
 				C67A2C5B2938D507004E93D0 /* ViewController.swift */,
-				C67A2C5D2938D507004E93D0 /* Main.storyboard */,
+				C67A2C6D2938D9D1004E93D0 /* Storyboards */,
 				C67A2C602938D508004E93D0 /* Assets.xcassets */,
 				C67A2C622938D508004E93D0 /* LaunchScreen.storyboard */,
 				C67A2C652938D508004E93D0 /* Info.plist */,
 			);
 			path = TeamProjectApp;
+			sourceTree = "<group>";
+		};
+		C67A2C6D2938D9D1004E93D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C67A2C5D2938D507004E93D0 /* Main.storyboard */,
+				C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67A2C642938D508004E93D0 /* LaunchScreen.storyboard in Resources */,
+				C67A2C6C2938D9C6004E93D0 /* GoalsList.storyboard in Resources */,
 				C67A2C612938D508004E93D0 /* Assets.xcassets in Resources */,
 				C67A2C5F2938D507004E93D0 /* Main.storyboard in Resources */,
 			);
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Kuryumov.TeamProjectApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Kuryumov.TeamProjectApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
