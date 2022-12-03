@@ -66,7 +66,7 @@
         <!--Main screen-->
         <scene sceneID="VBD-cT-mYG">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucc-bE-L9l">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,10 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home Work"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
+                                <connections>
+                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="yak-8t-5JC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">
                                 <rect key="frame" x="80" y="327" width="230" height="80"/>
@@ -130,10 +133,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
+                    <connections>
+                        <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="JaT-2l-Ftm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1302" y="-447"/>
+        </scene>
+        <!--LessonsVC-->
+        <scene sceneID="MYb-HY-6RP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lessons" referencedIdentifier="LessonsVC" id="9aS-zg-M1a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a0p-yC-RuJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPw-ax-hGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="-508"/>
         </scene>
     </scenes>
     <resources>
