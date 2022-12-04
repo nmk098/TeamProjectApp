@@ -31,7 +31,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="LuG-Hi-Kee">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="PDi-oH-Ctu"/>
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="PDi-oH-Ctu">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="raQ-Yu-mzX" id="sy5-rH-GMY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lzf-Ek-GYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -82,7 +82,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Goals"/>
                                 <connections>
                                     <action selector="goalsButtonPressed:" destination="9kw-dM-JZT" eventType="touchUpInside" id="vgM-qQ-94U"/>
-                                    <segue destination="2Mq-U2-xMV" kind="show" id="4HF-qg-DIO"/>
+                                    <segue destination="2Mq-U2-xMV" kind="presentation" identifier="goToGoalsListStoryboard" modalPresentationStyle="fullScreen" id="4HF-qg-DIO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-xG-eE3">
