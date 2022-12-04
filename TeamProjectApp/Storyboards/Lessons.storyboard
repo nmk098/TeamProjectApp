@@ -43,7 +43,7 @@
         <!--Navigation Controller-->
         <scene sceneID="eEd-hp-lOS">
             <objects>
-                <navigationController id="2il-LV-uPZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LessonsVC" id="2il-LV-uPZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="VVl-B6-eNA">
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
