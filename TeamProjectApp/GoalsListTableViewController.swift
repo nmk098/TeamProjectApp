@@ -16,10 +16,24 @@ class GoalsListTableViewController: UITableViewController {
             return 5
         }
         
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 0
         }
         
         
     }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    // MARK: - navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let goalsListVC = segue.destination as?
+                GoalsListTableViewController else {return}
+        
+    }
+    
+    
+    
 }

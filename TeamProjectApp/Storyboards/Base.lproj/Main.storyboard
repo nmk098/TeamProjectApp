@@ -82,7 +82,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Goals"/>
                                 <connections>
                                     <action selector="goalsButtonPressed:" destination="9kw-dM-JZT" eventType="touchUpInside" id="vgM-qQ-94U"/>
-                                    <segue destination="2Mq-U2-xMV" kind="show" id="4HF-qg-DIO"/>
+                                    <segue destination="2Mq-U2-xMV" kind="presentation" identifier="goToGoalsListStoryboard" modalPresentationStyle="fullScreen" id="4HF-qg-DIO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-xG-eE3">
@@ -138,7 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
                     <connections>
-                        <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="JaT-2l-Ftm"/>
+                        <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="JaT-2l-Ftm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
