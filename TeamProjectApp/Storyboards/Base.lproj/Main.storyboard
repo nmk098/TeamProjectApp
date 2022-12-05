@@ -66,9 +66,9 @@
         <!--Main screen-->
         <scene sceneID="VBD-cT-mYG">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucc-bE-L9l">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2P-wP-3Ja">
