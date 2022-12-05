@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BE2E2E293E144300D60041 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BE2E2D293E144300D60041 /* Profile.storyboard */; };
+		04BE2E31293E1DF500D60041 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E30293E1DF500D60041 /* ProfileViewController.swift */; };
+		04BE2E33293E1E0800D60041 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E32293E1E0800D60041 /* SettingViewController.swift */; };
+		04BE2E35293E1EAC00D60041 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BE2E34293E1EAC00D60041 /* colors.xcassets */; };
+		04BE2E38293E1FCA00D60041 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E37293E1FCA00D60041 /* Theme.swift */; };
+		04BE2E3A293E206500D60041 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E39293E206500D60041 /* LightTheme.swift */; };
+		04BE2E3C293E20D400D60041 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E3B293E20D400D60041 /* DarkTheme.swift */; };
 		C67A2C582938D507004E93D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67A2C572938D507004E93D0 /* AppDelegate.swift */; };
 		C67A2C5A2938D507004E93D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67A2C592938D507004E93D0 /* SceneDelegate.swift */; };
 		C67A2C5C2938D507004E93D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67A2C5B2938D507004E93D0 /* ViewController.swift */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BE2E2D293E144300D60041 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		04BE2E30293E1DF500D60041 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04BE2E32293E1E0800D60041 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		04BE2E34293E1EAC00D60041 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
+		04BE2E37293E1FCA00D60041 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		04BE2E39293E206500D60041 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		04BE2E3B293E20D400D60041 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
 		C67A2C542938D507004E93D0 /* TeamProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A2C572938D507004E93D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C67A2C592938D507004E93D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BE2E2F293E1DD300D60041 /* ProfileViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04BE2E30293E1DF500D60041 /* ProfileViewController.swift */,
+				04BE2E32293E1E0800D60041 /* SettingViewController.swift */,
+			);
+			path = ProfileViewControllers;
+			sourceTree = "<group>";
+		};
+		04BE2E36293E1F4D00D60041 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				04BE2E37293E1FCA00D60041 /* Theme.swift */,
+				04BE2E39293E206500D60041 /* LightTheme.swift */,
+				04BE2E3B293E20D400D60041 /* DarkTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		C67A2C4B2938D507004E93D0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +103,8 @@
 		C67A2C562938D507004E93D0 /* TeamProjectApp */ = {
 			isa = PBXGroup;
 			children = (
+				04BE2E36293E1F4D00D60041 /* Theme */,
+				04BE2E2F293E1DD300D60041 /* ProfileViewControllers */,
 				C67A2C572938D507004E93D0 /* AppDelegate.swift */,
 				C67A2C592938D507004E93D0 /* SceneDelegate.swift */,
 				C67A2C5B2938D507004E93D0 /* ViewController.swift */,
@@ -82,6 +117,7 @@
 				C67A2C602938D508004E93D0 /* Assets.xcassets */,
 				C67A2C622938D508004E93D0 /* LaunchScreen.storyboard */,
 				C67A2C652938D508004E93D0 /* Info.plist */,
+				04BE2E34293E1EAC00D60041 /* colors.xcassets */,
 			);
 			path = TeamProjectApp;
 			sourceTree = "<group>";
@@ -92,6 +128,7 @@
 				C67A2C5D2938D507004E93D0 /* Main.storyboard */,
 				C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */,
 				FAD48EBE293A4464007A963E /* Lessons.storyboard */,
+				04BE2E2D293E144300D60041 /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -162,10 +199,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BE2E2E293E144300D60041 /* Profile.storyboard in Resources */,
 				C67A2C642938D508004E93D0 /* LaunchScreen.storyboard in Resources */,
 				C67A2C6C2938D9C6004E93D0 /* GoalsList.storyboard in Resources */,
 				C67A2C612938D508004E93D0 /* Assets.xcassets in Resources */,
 				FAD48EBF293A4464007A963E /* Lessons.storyboard in Resources */,
+				04BE2E35293E1EAC00D60041 /* colors.xcassets in Resources */,
 				C67A2C5F2938D507004E93D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,9 +220,14 @@
 				FAD48EC1293B4D72007A963E /* LessonsViewController.swift in Sources */,
 				FAD48EBD293A4323007A963E /* MainScreenViewController.swift in Sources */,
 				FAD48EC5293B4E36007A963E /* LessonsDetailsViewController.swift in Sources */,
+				04BE2E38293E1FCA00D60041 /* Theme.swift in Sources */,
+				04BE2E3C293E20D400D60041 /* DarkTheme.swift in Sources */,
 				C67A2C582938D507004E93D0 /* AppDelegate.swift in Sources */,
+				04BE2E33293E1E0800D60041 /* SettingViewController.swift in Sources */,
 				FAD48EC7293B4EE4007A963E /* AboutLessons.swift in Sources */,
+				04BE2E31293E1DF500D60041 /* ProfileViewController.swift in Sources */,
 				C6C16F54293BDD4A00F1B5FF /* GoalsListTableViewController.swift in Sources */,
+				04BE2E3A293E206500D60041 /* LightTheme.swift in Sources */,
 				C67A2C5A2938D507004E93D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
