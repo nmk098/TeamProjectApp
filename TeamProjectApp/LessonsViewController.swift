@@ -9,6 +9,8 @@ import UIKit
 
 class LessonsViewController: UITableViewController {
     
+    @IBOutlet var searchBar: UISearchBar!
+    
     var filteredLists = [Lessons]()
     var isSearching = false
     
@@ -34,14 +36,14 @@ class LessonsViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         
         tableView.rowHeight = 80
-        
     }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        filteredLists.isEmpty ? lists.count : filteredLists.count
+        filteredLists.isEmpty ? lists.count : 1
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -49,7 +51,7 @@ class LessonsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        filteredLists.isEmpty ? lists[section].lessons.count : 1
+        filteredLists.isEmpty ? lists[section].lessons.count : filteredLists.count
     }
     
     
@@ -79,4 +81,20 @@ class LessonsViewController: UITableViewController {
         }
     }
 }
-
+// MARK: - Extension
+extension LessonsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredLists.removeAll()
+        guard searchText != "" || searchText != " " else {
+            print("empty search")
+            return
+        }
+        
+        filteredLists = lists.flatMap{$0.lessons}.filter { lesson in
+            lesson.lessonNumber.contains(searchText)
+        }
+        
+        tableView.reloadData()
+    }
+}

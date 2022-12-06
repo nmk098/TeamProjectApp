@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-rC-dJ8">
                                 <rect key="frame" x="16" y="288" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-iT-tH3">
                                 <rect key="frame" x="162.33333333333334" y="402" width="65.666666666666657" height="40"/>
@@ -36,7 +36,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <segue destination="9kw-dM-JZT" kind="show" id="JGr-DZ-nTv"/>
+                                    <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrw-PH-GIr"/>
+                                    <segue destination="9kw-dM-JZT" kind="presentation" identifier="goVC" modalPresentationStyle="fullScreen" id="JGr-DZ-nTv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +54,7 @@
                             <constraint firstItem="8mf-iT-tH3" firstAttribute="top" secondItem="3eF-rC-dJ8" secondAttribute="bottom" constant="80" id="xsH-Rl-dcP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6Hl-IB-gMz"/>
                     <connections>
                         <outlet property="LogIn" destination="8mf-iT-tH3" id="S7A-oa-hAw"/>
                         <outlet property="passwordTF" destination="3eF-rC-dJ8" id="32U-7f-lHH"/>
@@ -61,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="-447"/>
+            <point key="canvasLocation" x="1480" y="-447.15639810426541"/>
         </scene>
         <!--Main screen-->
         <scene sceneID="VBD-cT-mYG">
@@ -95,7 +97,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
                                 <connections>
-                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="yak-8t-5JC"/>
+                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="Ivs-Q7-xn9"/>
+                                    <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="UEO-Mi-bHR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">
@@ -140,13 +143,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
-                    <connections>
-                        <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="JaT-2l-Ftm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="-447"/>
+            <point key="canvasLocation" x="2225" y="-447"/>
         </scene>
         <!--GoalsList-->
         <scene sceneID="RMD-HS-0nU">
@@ -166,7 +166,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPw-ax-hGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2049" y="-508"/>
+            <point key="canvasLocation" x="2976.9230769230767" y="-508.2938388625592"/>
         </scene>
         <!--Profile-->
         <scene sceneID="VMR-O6-xsP">
