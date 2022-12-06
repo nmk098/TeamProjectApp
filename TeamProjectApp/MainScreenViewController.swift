@@ -17,14 +17,4 @@ class MainScreenViewController: UIViewController {
             guard segue.destination is LessonsViewController else { return }
         }
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        self.navigationItem.setHidesBackButton(true, animated: animated)
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        self.navigationItem.setHidesBackButton(false, animated: animated)
-//    }
 }
