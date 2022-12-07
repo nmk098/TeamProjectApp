@@ -28,12 +28,10 @@ class GoalsListTableViewController: UITableViewController {
     }
     // MARK: - navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let goalsListVC = segue.destination as?
-                GoalsListTableViewController else {return}
+  
         
     }
     
     
     
-}
+
