@@ -25,6 +25,7 @@
 		C67A2C6C2938D9C6004E93D0 /* GoalsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */; };
 		C6A097D52940F983005E2F1F /* AddingGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */; };
 		C6A097D72940FA08005E2F1F /* GoalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A097D62940FA08005E2F1F /* GoalsList.swift */; };
+		C6B0052329411A150087845D /* GoalsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0052229411A150087845D /* GoalsDetailsViewController.swift */; };
 		C6C16F54293BDD4A00F1B5FF /* GoalsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */; };
 		FA70B3B12941040A0000435A /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA70B3B02941040A0000435A /* Notes.storyboard */; };
 		FA70B3B32941046E0000435A /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70B3B22941046E0000435A /* NotesTableViewController.swift */; };
@@ -58,6 +59,7 @@
 		C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoalsList.storyboard; sourceTree = "<group>"; };
 		C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingGoalViewController.swift; sourceTree = "<group>"; };
 		C6A097D62940FA08005E2F1F /* GoalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsList.swift; sourceTree = "<group>"; };
+		C6B0052229411A150087845D /* GoalsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailsViewController.swift; sourceTree = "<group>"; };
 		C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewController.swift; sourceTree = "<group>"; };
 		FA70B3B02941040A0000435A /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
 		FA70B3B22941046E0000435A /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesTableViewController.swift; path = TeamProjectApp/NotesTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -138,6 +140,7 @@
 				FAD48EC4293B4E36007A963E /* LessonsDetailsViewController.swift */,
 				C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */,
 				C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */,
+				C6B0052229411A150087845D /* GoalsDetailsViewController.swift */,
 				FA70B3B22941046E0000435A /* NotesTableViewController.swift */,
 				FA70B3B4294104A30000435A /* CreatingNotesViewController.swift */,
 				FA70B3B6294104BD0000435A /* EntryViewController.swift */,
@@ -255,6 +258,7 @@
 				FAD48EC1293B4D72007A963E /* LessonsViewController.swift in Sources */,
 				C6A097D52940F983005E2F1F /* AddingGoalViewController.swift in Sources */,
 				FAD48EBD293A4323007A963E /* MainScreenViewController.swift in Sources */,
+				C6B0052329411A150087845D /* GoalsDetailsViewController.swift in Sources */,
 				043158842940E3090003AF1E /* DataPersone.swift in Sources */,
 				FAD48EC5293B4E36007A963E /* LessonsDetailsViewController.swift in Sources */,
 				043158812940E2DB0003AF1E /* Person.swift in Sources */,

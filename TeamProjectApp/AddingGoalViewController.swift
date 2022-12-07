@@ -8,7 +8,10 @@
 import UIKit
 
 class AddingGoalViewController: UIViewController {
-
+    
+    
+    
+    
     @IBOutlet var goalTitleTF: UITextField!
     @IBOutlet var goalDescriptionTF: UITextField!
     
@@ -17,11 +20,6 @@ class AddingGoalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-
-    @IBAction func saveButtonTapped(_ sender: Any) {
-        
-    }
-    
-
 }
+    
+

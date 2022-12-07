@@ -13,7 +13,6 @@ class NotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.dataSource = self
     }
     
@@ -37,6 +36,7 @@ class NotesTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     
+  
     override func numberOfSections(in tableView: UITableView) -> Int {
         1
     }

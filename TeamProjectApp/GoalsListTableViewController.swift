@@ -7,13 +7,18 @@
 
 import UIKit
 
-class GoalsListTableViewController: UITableViewController {
+
+
+    class GoalsListTableViewController: UITableViewController {
+       
+      
+        
     
     private var goalsList = Goals.getGoalList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = 100
     }
         // MARK: - Table view data source
     
@@ -27,17 +32,20 @@ class GoalsListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = goal.goalTitle
         content.secondaryText = goal.goalDescription
-        content.image = UIImage(named: "star")
+        content.image = UIImage(named: "swiftLogo")
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell  
     }
+ 
+    // MARK:  - Navigation
     
-    // MARK: Table view delegate
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        120
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        guard let detailsVC = segue.destination as? GoalsDetailsViewController else {return}
+        detailsVC.goal = goalsList[indexPath.row]
     }
-       
+   
     @IBAction func cancelButtonTapped(_ sender: Any) {
         dismiss(animated: true)
     }
