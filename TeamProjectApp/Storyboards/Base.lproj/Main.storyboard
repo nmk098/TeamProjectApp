@@ -118,7 +118,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Bio"/>
                                 <connections>
-                                    <segue destination="kl4-5L-Czu" kind="show" identifier="" id="53P-1T-JTy"/>
+                                    <segue destination="kl4-5L-Czu" kind="show" identifier="goToProfile" id="53P-1T-JTy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-cp-bmH">

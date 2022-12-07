@@ -62,7 +62,6 @@ final class ProfileViewController: UIViewController {
     
     @IBAction func actionSegment(_ sender: UISegmentedControl) {
         
-        print(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
         case 0:
             personalStackView.isHidden = false
@@ -74,6 +73,14 @@ final class ProfileViewController: UIViewController {
             break
         }
     }
+    
+    
+    
+    @IBAction func cancelTapperd(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
+    
 }
 
 
@@ -83,6 +90,7 @@ private extension ProfileViewController {
     
     func setupUI() {
         setupViewColor()
+        setupView()
         setupImage()
     }
 }
@@ -98,6 +106,13 @@ private extension ProfileViewController {
         viewProfile.layer.shadowOpacity = 0.5
         viewProfile.layer.shadowOffset = CGSize(width: -5.0, height: 15.0)
         viewProfile.layer.shadowRadius = 10
+    }
+    
+    private func setupView() {
+        fullNameLable.text = persone.fullName
+        phoneLable.text = persone.phone
+        emailLable.text = persone.email
+        ebautMeLable.text = persone.eboutMe
     }
     
     func setupImage() {

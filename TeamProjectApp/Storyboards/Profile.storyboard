@@ -191,6 +191,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tl9-Ui-UNb">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jMW-g2-fft">
+                            <connections>
+                                <action selector="cancelTapperd:" destination="Y6W-OH-hqX" id="gH1-NH-alV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="pfM-48-hj6">
                             <connections>
                                 <segue destination="yhA-dm-YJv" kind="show" id="jnR-hk-PX6"/>
