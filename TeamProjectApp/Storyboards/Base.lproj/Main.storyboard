@@ -9,14 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="61504-gory_vershiny_sneg_yasnoe_nebo-4" translatesAutoresizingMaskIntoConstraints="NO" id="vzd-gd-fAM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-I9-18O">
                                 <rect key="frame" x="16" y="238" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -25,7 +28,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-rC-dJ8">
                                 <rect key="frame" x="16" y="288" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-iT-tH3">
                                 <rect key="frame" x="162.33333333333334" y="402" width="65.666666666666657" height="40"/>
@@ -36,7 +39,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <segue destination="9kw-dM-JZT" kind="show" id="JGr-DZ-nTv"/>
+                                    <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrw-PH-GIr"/>
+                                    <segue destination="9kw-dM-JZT" kind="presentation" identifier="goVC" modalPresentationStyle="fullScreen" id="JGr-DZ-nTv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,12 +51,17 @@
                             <constraint firstItem="3eF-rC-dJ8" firstAttribute="top" secondItem="r5y-I9-18O" secondAttribute="bottom" constant="16" id="Nso-YB-gGX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r5y-I9-18O" secondAttribute="trailing" constant="16" id="RgW-Xg-TpO"/>
                             <constraint firstItem="8mf-iT-tH3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WMl-Ol-csf"/>
+                            <constraint firstAttribute="trailing" secondItem="vzd-gd-fAM" secondAttribute="trailing" id="b9T-eE-cPV"/>
                             <constraint firstItem="3eF-rC-dJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bLa-Di-GdO"/>
+                            <constraint firstItem="vzd-gd-fAM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fRn-Sg-oBh"/>
                             <constraint firstItem="r5y-I9-18O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ifi-sx-Kyr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3eF-rC-dJ8" secondAttribute="trailing" constant="16" id="qXE-8i-clc"/>
+                            <constraint firstAttribute="bottom" secondItem="vzd-gd-fAM" secondAttribute="bottom" id="teL-wy-Anx"/>
+                            <constraint firstItem="vzd-gd-fAM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="trJ-bA-ICr"/>
                             <constraint firstItem="8mf-iT-tH3" firstAttribute="top" secondItem="3eF-rC-dJ8" secondAttribute="bottom" constant="80" id="xsH-Rl-dcP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6Hl-IB-gMz"/>
                     <connections>
                         <outlet property="LogIn" destination="8mf-iT-tH3" id="S7A-oa-hAw"/>
                         <outlet property="passwordTF" destination="3eF-rC-dJ8" id="32U-7f-lHH"/>
@@ -61,14 +70,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="-447"/>
+            <point key="canvasLocation" x="1480" y="-447.15639810426541"/>
         </scene>
-        <!--Main screen-->
+        <!--MainPage-->
         <scene sceneID="VBD-cT-mYG">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" title="MainPage" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucc-bE-L9l">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2P-wP-3Ja">
@@ -81,8 +90,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Goals"/>
                                 <connections>
-                                    <action selector="goalsButtonPressed:" destination="9kw-dM-JZT" eventType="touchUpInside" id="vgM-qQ-94U"/>
-                                    <segue destination="2Mq-U2-xMV" kind="presentation" identifier="goToGoalsListStoryboard" modalPresentationStyle="fullScreen" id="4HF-qg-DIO"/>
+                                    <action selector="goalsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="ixV-MK-fua"/>
+                                    <segue destination="2Mq-U2-xMV" kind="presentation" identifier="goToGoalsListStoryboard" modalPresentationStyle="fullScreen" id="ZFa-iA-Xtr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-xG-eE3">
@@ -95,7 +104,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
                                 <connections>
-                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="yak-8t-5JC"/>
+                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="Ivs-Q7-xn9"/>
+                                    <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="UEO-Mi-bHR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">
@@ -107,6 +117,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Bio"/>
+                                <connections>
+                                    <segue destination="kl4-5L-Czu" kind="show" identifier="goToProfile" id="53P-1T-JTy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-cp-bmH">
                                 <rect key="frame" x="80" y="447" width="230" height="80"/>
@@ -117,6 +130,10 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Notes"/>
+                                <connections>
+                                    <action selector="notesButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="789-c5-nUa"/>
+                                    <segue destination="d3Q-M8-7kV" kind="presentation" identifier="goToNotesStoryboard" modalPresentationStyle="fullScreen" id="Vxn-j7-7r2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TF1-0W-pxK"/>
@@ -138,22 +155,33 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
                     <connections>
-                        <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="JaT-2l-Ftm"/>
+                        <outlet property="bioButton" destination="3qG-wA-Jel" id="Suv-X3-mEd"/>
+                        <outlet property="goalsButton" destination="c2P-wP-3Ja" id="4CB-sv-C5X"/>
+                        <outlet property="lessonsButton" destination="2uc-xG-eE3" id="2hr-4m-Zd9"/>
+                        <outlet property="notesButton" destination="ebh-cp-bmH" id="MEc-Z0-Nkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="-447"/>
+            <point key="canvasLocation" x="2355" y="-447"/>
         </scene>
         <!--GoalsList-->
         <scene sceneID="RMD-HS-0nU">
             <objects>
-                <viewControllerPlaceholder storyboardName="GoalsList" id="2Mq-U2-xMV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="GoalsList" storyboardName="GoalsList" id="2Mq-U2-xMV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="kpf-aM-ooM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5im-wu-yhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021" y="-658"/>
+            <point key="canvasLocation" x="3290" y="-629"/>
+        </scene>
+        <!--NotesVC-->
+        <scene sceneID="pc6-Kd-bhJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notes" referencedIdentifier="NotesVC" id="d3Q-M8-7kV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMs-is-lgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3190" y="-474"/>
         </scene>
         <!--LessonsVC-->
         <scene sceneID="MYb-HY-6RP">
@@ -163,10 +191,21 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPw-ax-hGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2049" y="-508"/>
+            <point key="canvasLocation" x="3440" y="-353"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="VMR-O6-xsP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="kl4-5L-Czu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yRj-r6-xyU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUi-Qx-apx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3204" y="-286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="61504-gory_vershiny_sneg_yasnoe_nebo-4" width="1000" height="2160"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

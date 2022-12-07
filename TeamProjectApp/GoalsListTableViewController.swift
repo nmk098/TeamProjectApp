@@ -7,33 +7,53 @@
 
 import UIKit
 
-class GoalsListTableViewController: UITableViewController {
+protocol newGoalDelegate: AnyObject {
+    func getGoal(_ title: String, _ description: String) -> [Goals] 
+}
+
+    class GoalsListTableViewController: UITableViewController {
+       
+      
+        
+    
+    private var goalsList = Goals.getGoalList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return 5
-        }
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 0
-        }
-        
-        
+        tableView.rowHeight = 100
     }
+        // MARK: - Table view data source
     
-    @IBAction func cancelButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true)
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            goalsList.count
+        }
+        
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCell", for: indexPath)
+         let goal = goalsList[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = goal.goalTitle
+        content.secondaryText = goal.goalDescription
+        content.image = UIImage(named: "swiftLogo")
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        cell.contentConfiguration = content
+        return cell  
     }
-    // MARK: - navigation
+ 
+    // MARK:  - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let goalsListVC = segue.destination as?
-                GoalsListTableViewController else {return}
-        
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        guard let detailsVC = segue.destination as? GoalsDetailsViewController else {return}
+        detailsVC.goal = goalsList[indexPath.row]
+    }
+   
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true)
     }
     
-    
-    
 }
+    
+    
+    
+
