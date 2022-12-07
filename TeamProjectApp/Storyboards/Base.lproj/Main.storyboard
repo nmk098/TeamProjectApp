@@ -80,8 +80,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="61504-gory_vershiny_sneg_yasnoe_nebo-4" translatesAutoresizingMaskIntoConstraints="NO" id="0aP-TV-dWf">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2P-wP-3Ja">
-                                <rect key="frame" x="80" y="87" width="230" height="80"/>
+                                <rect key="frame" x="80" y="127" width="230" height="80"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="PvF-3b-3Gm"/>
@@ -95,7 +98,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-xG-eE3">
-                                <rect key="frame" x="80" y="207" width="230" height="80"/>
+                                <rect key="frame" x="80" y="247" width="230" height="80"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="P6E-R5-zIC"/>
@@ -109,7 +112,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">
-                                <rect key="frame" x="80" y="327" width="230" height="80"/>
+                                <rect key="frame" x="80" y="367" width="230" height="80"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Zk2-As-ZxD"/>
@@ -122,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-cp-bmH">
-                                <rect key="frame" x="80" y="447" width="230" height="80"/>
+                                <rect key="frame" x="80" y="487" width="230" height="80"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Y1g-es-1vS"/>
@@ -139,18 +142,22 @@
                         <viewLayoutGuide key="safeArea" id="TF1-0W-pxK"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="ebh-cp-bmH" firstAttribute="top" secondItem="3qG-wA-Jel" secondAttribute="bottom" constant="40" id="E69-5n-PSR"/>
-                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="2uc-xG-eE3" secondAttribute="trailing" constant="80" id="Pwq-DI-SgL"/>
-                            <constraint firstItem="c2P-wP-3Ja" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="YbS-ix-1Ti"/>
-                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="c2P-wP-3Ja" secondAttribute="trailing" constant="80" id="Yhl-ZS-vqF"/>
-                            <constraint firstItem="ebh-cp-bmH" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="dIx-43-1AW"/>
-                            <constraint firstItem="2uc-xG-eE3" firstAttribute="top" secondItem="c2P-wP-3Ja" secondAttribute="bottom" constant="40" id="duK-3l-HgF"/>
-                            <constraint firstItem="c2P-wP-3Ja" firstAttribute="top" secondItem="TF1-0W-pxK" secondAttribute="top" constant="40" id="hlP-ab-AAt"/>
-                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="3qG-wA-Jel" secondAttribute="trailing" constant="80" id="ihV-9G-vYP"/>
-                            <constraint firstItem="3qG-wA-Jel" firstAttribute="top" secondItem="2uc-xG-eE3" secondAttribute="bottom" constant="40" id="na4-Pd-16o"/>
-                            <constraint firstItem="3qG-wA-Jel" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="sLq-YG-mAu"/>
-                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="ebh-cp-bmH" secondAttribute="trailing" constant="80" id="uAC-up-HV4"/>
-                            <constraint firstItem="2uc-xG-eE3" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="vEB-Ka-clP"/>
+                            <constraint firstItem="2uc-xG-eE3" firstAttribute="top" secondItem="c2P-wP-3Ja" secondAttribute="bottom" constant="40" id="3WQ-aK-t4t"/>
+                            <constraint firstItem="ebh-cp-bmH" firstAttribute="top" secondItem="3qG-wA-Jel" secondAttribute="bottom" constant="40" id="Drq-00-X5S"/>
+                            <constraint firstItem="0aP-TV-dWf" firstAttribute="leading" secondItem="Ucc-bE-L9l" secondAttribute="leading" id="DsT-4b-eCW"/>
+                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="c2P-wP-3Ja" secondAttribute="trailing" constant="80" id="MPo-al-jIc"/>
+                            <constraint firstItem="ebh-cp-bmH" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="PDA-ta-lSR"/>
+                            <constraint firstAttribute="bottom" secondItem="0aP-TV-dWf" secondAttribute="bottom" id="Rus-gJ-eQb"/>
+                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="2uc-xG-eE3" secondAttribute="trailing" constant="80" id="TH7-YK-Pw2"/>
+                            <constraint firstItem="c2P-wP-3Ja" firstAttribute="top" secondItem="TF1-0W-pxK" secondAttribute="top" constant="80" id="Y2I-xm-ckE"/>
+                            <constraint firstItem="c2P-wP-3Ja" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="ell-gZ-5WZ"/>
+                            <constraint firstAttribute="trailing" secondItem="0aP-TV-dWf" secondAttribute="trailing" id="gko-eI-Imo"/>
+                            <constraint firstItem="3qG-wA-Jel" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="hMA-dC-Chj"/>
+                            <constraint firstItem="2uc-xG-eE3" firstAttribute="leading" secondItem="TF1-0W-pxK" secondAttribute="leading" constant="80" id="oYb-pX-X09"/>
+                            <constraint firstItem="0aP-TV-dWf" firstAttribute="top" secondItem="Ucc-bE-L9l" secondAttribute="top" id="snF-Io-tlZ"/>
+                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="3qG-wA-Jel" secondAttribute="trailing" constant="80" id="v76-Xr-aMH"/>
+                            <constraint firstItem="3qG-wA-Jel" firstAttribute="top" secondItem="2uc-xG-eE3" secondAttribute="bottom" constant="40" id="xw4-s0-yud"/>
+                            <constraint firstItem="TF1-0W-pxK" firstAttribute="trailing" secondItem="ebh-cp-bmH" secondAttribute="trailing" constant="80" id="zAy-Tj-AX6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>

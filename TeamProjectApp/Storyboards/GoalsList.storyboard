@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="GoalsList" title="GoalListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="raQ-Yu-mzX" customClass="GoalsListTableViewController" customModule="TeamProjectApp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uhV-bz-c2x">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
@@ -72,16 +72,16 @@
             <objects>
                 <viewController id="5yc-jt-h0z" customClass="AddingGoalViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iwO-4h-zjd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Добавьте цель!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKQ-6W-QDV">
-                                <rect key="frame" x="80" y="183" width="233" height="34"/>
+                                <rect key="frame" x="80" y="139" width="233" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Опишите цель в трех словах!.. можно больше" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grh-XF-q8h">
-                                <rect key="frame" x="40" y="297" width="313" height="109.66666666666669"/>
+                                <rect key="frame" x="40" y="252.99999999999997" width="313" height="109.66666666666666"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="grh-XF-q8h" secondAttribute="height" multiplier="97:34" id="jQd-ey-seq"/>
                                 </constraints>
@@ -89,14 +89,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-eB-nVn">
-                                <rect key="frame" x="166" y="486.66666666666669" width="61" height="35.000000000000057"/>
+                                <rect key="frame" x="166" y="442.66666666666669" width="61" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="6wJ-nv-2J6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
+                                    <action selector="saveButtonPressed:" destination="5yc-jt-h0z" eventType="touchUpInside" id="cxy-9w-Ej5"/>
                                     <action selector="saveButtonTapped:" destination="5yc-jt-h0z" eventType="touchUpInside" id="bi9-DK-Wxo"/>
+                                    <segue destination="raQ-Yu-mzX" kind="replace" splitViewControllerTargetIndex="1" id="dge-Le-jrZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -206,7 +208,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3nx-SO-iAG"/>
+        <segue reference="Vcm-3l-23l"/>
+        <segue reference="dge-Le-jrZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

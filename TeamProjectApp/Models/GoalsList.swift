@@ -11,10 +11,9 @@ struct Goals {
     var goalTitle: String
     var goalDescription: String
     
-    var goal: String {
-        "\(goalTitle) : \(goalDescription)"
+    var goals: [Goals] = []
     }
-}
+
 
 extension Goals {
     static func getGoalList() -> [Goals] {
