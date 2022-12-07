@@ -37,23 +37,10 @@ final class ProfileViewController: UIViewController {
     @IBOutlet weak var eboutMeStackView: UIStackView!
     
     
-    override func viewDidLayoutSubviews() {
-        updateTheme()
-
-    }
-    
-    override func viewWillLayoutSubviews() {
-        updateTheme()
-
-    }
+    var persone: Person!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateTheme()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         updateTheme()
     }
     
@@ -75,7 +62,6 @@ final class ProfileViewController: UIViewController {
     
     @IBAction func actionSegment(_ sender: UISegmentedControl) {
         
-        print(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
         case 0:
             personalStackView.isHidden = false
@@ -87,6 +73,14 @@ final class ProfileViewController: UIViewController {
             break
         }
     }
+    
+    
+    
+    @IBAction func cancelTapperd(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
+    
 }
 
 
@@ -96,6 +90,7 @@ private extension ProfileViewController {
     
     func setupUI() {
         setupViewColor()
+        setupView()
         setupImage()
     }
 }
@@ -113,6 +108,13 @@ private extension ProfileViewController {
         viewProfile.layer.shadowRadius = 10
     }
     
+    private func setupView() {
+        fullNameLable.text = persone.fullName
+        phoneLable.text = persone.phone
+        emailLable.text = persone.email
+        ebautMeLable.text = persone.eboutMe
+    }
+    
     func setupImage() {
         imageView.layer.borderWidth = 3
         imageView.layer.borderColor = UIColor.white.cgColor
@@ -123,7 +125,6 @@ private extension ProfileViewController {
         view.backgroundColor = Theme.currentTheme.backgroundColor
         imageView.layer.borderColor = Theme.currentTheme.lineColor.cgColor
         lineView.backgroundColor = Theme.currentTheme.lineColor
-//        lineView.backgroundColor = Theme.currentTheme.lineColor
     }
 }
 

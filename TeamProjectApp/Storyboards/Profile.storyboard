@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="dwJ-7b-rpK">
-                                <rect key="frame" x="45" y="210" width="290" height="398"/>
+                                <rect key="frame" x="45" y="220" width="290" height="398"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pFo-fx-9hY">
                                         <rect key="frame" x="0.0" y="0.0" width="174.5" height="58"/>
@@ -107,7 +107,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lje-NF-5YX">
-                                <rect key="frame" x="10" y="50" width="375" height="130"/>
+                                <rect key="frame" x="10" y="60" width="375" height="130"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="auh-Je-2xd">
                                         <rect key="frame" x="20" y="30" width="100" height="100"/>
@@ -156,7 +156,7 @@
                                 </constraints>
                             </view>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uwg-IR-sby">
-                                <rect key="frame" x="45" y="210" width="290" height="145.5"/>
+                                <rect key="frame" x="45" y="220" width="290" height="145.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR GIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jt-F4-Uge">
                                         <rect key="frame" x="0.0" y="0.0" width="59.5" height="40"/>
@@ -181,7 +181,7 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dwJ-7b-rpK" secondAttribute="trailing" constant="40" id="4L5-MP-BWu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uwg-IR-sby" secondAttribute="trailing" constant="40" id="76d-MM-7RQ"/>
-                            <constraint firstItem="lje-NF-5YX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="50" id="9Me-Gv-g4w"/>
+                            <constraint firstItem="lje-NF-5YX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="60" id="9Me-Gv-g4w"/>
                             <constraint firstItem="dwJ-7b-rpK" firstAttribute="top" secondItem="lje-NF-5YX" secondAttribute="bottom" constant="30" id="BFh-fc-ggX"/>
                             <constraint firstAttribute="trailing" secondItem="lje-NF-5YX" secondAttribute="trailing" constant="-10" id="XNY-dK-jKy"/>
                             <constraint firstItem="uwg-IR-sby" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="Zsz-8S-6O7"/>
@@ -191,6 +191,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tl9-Ui-UNb">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jMW-g2-fft">
+                            <connections>
+                                <action selector="cancelTapperd:" destination="Y6W-OH-hqX" id="gH1-NH-alV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="pfM-48-hj6">
                             <connections>
                                 <segue destination="yhA-dm-YJv" kind="show" id="jnR-hk-PX6"/>
