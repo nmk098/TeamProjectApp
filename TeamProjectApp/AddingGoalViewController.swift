@@ -17,7 +17,26 @@ class AddingGoalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        
+        let goalsListVC = GoalsListTableViewController()
+        goalsListVC.getNewGoal(title: goalTitleTF.text!, description: goalDescriptionTF.text!)
+        
+        
+    }
+    
+// MARK: - navigation:
     }
 
+
+//MARK: - extensions
+
+extension AddingGoalViewController {
+    func getNewGoal(title: String?, description: String?) {
+        [Goals(goalTitle: title!, goalDescription: description!)]
+    }
+}
     
 
