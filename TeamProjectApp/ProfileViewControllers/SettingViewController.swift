@@ -68,10 +68,7 @@ final class SettingViewController: UIViewController {
             blue: rgba.blue,
             alpha: 1
         ))
-//        dismiss(animated: true)
     }
-    
-    
 }
 
 
@@ -145,13 +142,10 @@ private extension SettingViewController {
         )
         viewColor.backgroundColor = color
         lineView.layer.shadowColor = color.cgColor
-
     }
     
     func updateTheme() {
         view.backgroundColor = Theme.currentTheme.backgroundColor
-//        lineView.backgroundColor = Theme.currentTheme.lineColor
     }
-    
 }
 

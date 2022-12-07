@@ -37,23 +37,8 @@ final class ProfileViewController: UIViewController {
     @IBOutlet weak var eboutMeStackView: UIStackView!
     
     
-    override func viewDidLayoutSubviews() {
-        updateTheme()
-
-    }
-    
-    override func viewWillLayoutSubviews() {
-        updateTheme()
-
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateTheme()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         updateTheme()
     }
     
@@ -123,7 +108,6 @@ private extension ProfileViewController {
         view.backgroundColor = Theme.currentTheme.backgroundColor
         imageView.layer.borderColor = Theme.currentTheme.lineColor.cgColor
         lineView.backgroundColor = Theme.currentTheme.lineColor
-//        lineView.backgroundColor = Theme.currentTheme.lineColor
     }
 }
 
