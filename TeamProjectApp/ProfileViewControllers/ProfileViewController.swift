@@ -37,6 +37,8 @@ final class ProfileViewController: UIViewController {
     @IBOutlet weak var eboutMeStackView: UIStackView!
     
     
+    var persone: Person!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateTheme()

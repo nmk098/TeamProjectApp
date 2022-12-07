@@ -18,8 +18,8 @@ class LogInViewController: UIViewController {
     private var person: Person!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.destination is MainScreenViewController else {  return }
-        
+        guard let navVC = segue.destination as? MainScreenViewController else { return }
+        navVC.persone = person
     }
 
     
@@ -32,7 +32,7 @@ class LogInViewController: UIViewController {
             clearTextFields()
             return
         }
-        performSegue(withIdentifier: "openMainScreen", sender: nil)
+        performSegue(withIdentifier: "goVC", sender: nil)
     }
 }
 
