@@ -26,13 +26,6 @@ extension Goals {
             Goals(goalTitle: "Захватить мир" , goalDescription: "*злодейский смех*")
         ]
     }
-    
-    func getNewGoal (_ title: String, _ description: String) -> [Goals] {
-        var newGoal: [Goals]
-        newGoal.append(Goals(goalTitle: String, goalDescription: String))
-        return newGoal
-    }
-    
 }
     
     
