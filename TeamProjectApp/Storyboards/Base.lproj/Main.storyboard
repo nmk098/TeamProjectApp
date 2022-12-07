@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="61504-gory_vershiny_sneg_yasnoe_nebo-4" translatesAutoresizingMaskIntoConstraints="NO" id="vzd-gd-fAM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-I9-18O">
                                 <rect key="frame" x="16" y="238" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,9 +51,13 @@
                             <constraint firstItem="3eF-rC-dJ8" firstAttribute="top" secondItem="r5y-I9-18O" secondAttribute="bottom" constant="16" id="Nso-YB-gGX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r5y-I9-18O" secondAttribute="trailing" constant="16" id="RgW-Xg-TpO"/>
                             <constraint firstItem="8mf-iT-tH3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WMl-Ol-csf"/>
+                            <constraint firstAttribute="trailing" secondItem="vzd-gd-fAM" secondAttribute="trailing" id="b9T-eE-cPV"/>
                             <constraint firstItem="3eF-rC-dJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bLa-Di-GdO"/>
+                            <constraint firstItem="vzd-gd-fAM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fRn-Sg-oBh"/>
                             <constraint firstItem="r5y-I9-18O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ifi-sx-Kyr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3eF-rC-dJ8" secondAttribute="trailing" constant="16" id="qXE-8i-clc"/>
+                            <constraint firstAttribute="bottom" secondItem="vzd-gd-fAM" secondAttribute="bottom" id="teL-wy-Anx"/>
+                            <constraint firstItem="vzd-gd-fAM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="trJ-bA-ICr"/>
                             <constraint firstItem="8mf-iT-tH3" firstAttribute="top" secondItem="3eF-rC-dJ8" secondAttribute="bottom" constant="80" id="xsH-Rl-dcP"/>
                         </constraints>
                     </view>
@@ -180,6 +187,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="61504-gory_vershiny_sneg_yasnoe_nebo-4" width="1000" height="2160"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

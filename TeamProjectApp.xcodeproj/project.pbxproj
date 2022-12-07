@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043158812940E2DB0003AF1E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043158802940E2DB0003AF1E /* Person.swift */; };
+		043158842940E3090003AF1E /* DataPersone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043158832940E3090003AF1E /* DataPersone.swift */; };
 		04BE2E2E293E144300D60041 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BE2E2D293E144300D60041 /* Profile.storyboard */; };
 		04BE2E31293E1DF500D60041 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E30293E1DF500D60041 /* ProfileViewController.swift */; };
 		04BE2E33293E1E0800D60041 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE2E32293E1E0800D60041 /* SettingViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043158802940E2DB0003AF1E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		043158832940E3090003AF1E /* DataPersone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersone.swift; sourceTree = "<group>"; };
 		04BE2E2D293E144300D60041 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		04BE2E30293E1DF500D60041 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04BE2E32293E1E0800D60041 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043158822940E2F30003AF1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				043158832940E3090003AF1E /* DataPersone.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		04BE2E2F293E1DD300D60041 /* ProfileViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		C67A2C562938D507004E93D0 /* TeamProjectApp */ = {
 			isa = PBXGroup;
 			children = (
+				043158822940E2F30003AF1E /* Services */,
 				04BE2E36293E1F4D00D60041 /* Theme */,
 				04BE2E2F293E1DD300D60041 /* ProfileViewControllers */,
 				C67A2C572938D507004E93D0 /* AppDelegate.swift */,
@@ -137,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD48EC6293B4EE4007A963E /* AboutLessons.swift */,
+				043158802940E2DB0003AF1E /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,7 +233,9 @@
 				C67A2C5C2938D507004E93D0 /* LogInViewController.swift in Sources */,
 				FAD48EC1293B4D72007A963E /* LessonsViewController.swift in Sources */,
 				FAD48EBD293A4323007A963E /* MainScreenViewController.swift in Sources */,
+				043158842940E3090003AF1E /* DataPersone.swift in Sources */,
 				FAD48EC5293B4E36007A963E /* LessonsDetailsViewController.swift in Sources */,
+				043158812940E2DB0003AF1E /* Person.swift in Sources */,
 				04BE2E38293E1FCA00D60041 /* Theme.swift in Sources */,
 				04BE2E3C293E20D400D60041 /* DarkTheme.swift in Sources */,
 				C67A2C582938D507004E93D0 /* AppDelegate.swift in Sources */,
