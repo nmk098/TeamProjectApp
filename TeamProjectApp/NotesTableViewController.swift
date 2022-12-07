@@ -14,6 +14,7 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     @IBAction func didTapAddButton() {
@@ -46,14 +47,14 @@ class NotesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let notesCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        var content = cell.defaultContentConfiguration()
+        var content = notesCell.defaultContentConfiguration()
         content.text = models[indexPath.row].title
         content.secondaryText = models[indexPath.row].note
-        cell.contentConfiguration = content
+        notesCell.contentConfiguration = content
         
-        return cell
+        return notesCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
