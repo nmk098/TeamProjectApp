@@ -130,6 +130,10 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Notes"/>
+                                <connections>
+                                    <action selector="notesButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="789-c5-nUa"/>
+                                    <segue destination="d3Q-M8-7kV" kind="presentation" identifier="goToNotesStoryboard" modalPresentationStyle="fullScreen" id="Vxn-j7-7r2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TF1-0W-pxK"/>
@@ -164,6 +168,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5im-wu-yhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3290" y="-629"/>
+        </scene>
+        <!--NotesVC-->
+        <scene sceneID="pc6-Kd-bhJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notes" referencedIdentifier="NotesVC" id="d3Q-M8-7kV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMs-is-lgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3190" y="-474"/>
         </scene>
         <!--LessonsVC-->
         <scene sceneID="MYb-HY-6RP">

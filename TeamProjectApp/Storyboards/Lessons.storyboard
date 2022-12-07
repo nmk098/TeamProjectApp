@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="j8E-a4-Oid">
-                            <rect key="frame" x="0.0" y="0.0" width="180" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
@@ -33,7 +33,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Y6W-OH-hqX" kind="presentation" identifier="showDetails" modalPresentationStyle="fullScreen" id="GGU-nI-kCd"/>
+                                    <segue destination="Y6W-OH-hqX" kind="show" identifier="showDetails" id="GGU-nI-kCd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-S6-MdU">
-                                <rect key="frame" x="16" y="77" width="358" height="27.666666666666671"/>
+                                <rect key="frame" x="16" y="121.00000000000001" width="358" height="27.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
