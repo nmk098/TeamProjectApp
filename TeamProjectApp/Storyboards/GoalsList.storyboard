@@ -96,7 +96,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
-                                    <action selector="saveButtonTapped:" destination="5yc-jt-h0z" eventType="touchUpInside" id="zox-n5-DH5"/>
+                                    <action selector="saveButtonTapped:" destination="5yc-jt-h0z" eventType="touchUpInside" id="bi9-DK-Wxo"/>
                                 </connections>
                             </button>
                         </subviews>

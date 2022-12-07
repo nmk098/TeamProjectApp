@@ -7,7 +7,9 @@
 
 import UIKit
 
-
+protocol newGoalDelegate: AnyObject {
+    func getGoal(_ title: String, _ description: String) -> [Goals] 
+}
 
     class GoalsListTableViewController: UITableViewController {
        

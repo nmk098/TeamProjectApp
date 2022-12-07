@@ -9,8 +9,17 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
     
+
+    @IBOutlet var goalsButton: UIButton!
+    @IBOutlet var lessonsButton: UIButton!
+    @IBOutlet var bioButton: UIButton!
+    @IBOutlet var notesButton: UIButton!
+    
     override func viewDidLoad() {
-        
+        goalsButton.layer.cornerRadius = goalsButton.frame.height / 2
+        lessonsButton.layer.cornerRadius = lessonsButton.frame.height / 2
+        bioButton.layer.cornerRadius = bioButton.frame.height / 2
+        notesButton.layer.cornerRadius = notesButton.frame.height / 2
     }
     
     @IBAction func lessonsButtonTapped(_ sender: UIButton) {

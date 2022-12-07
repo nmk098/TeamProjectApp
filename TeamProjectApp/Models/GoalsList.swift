@@ -8,8 +8,8 @@
 import Foundation
 
 struct Goals {
-    let goalTitle: String
-    let goalDescription: String
+    var goalTitle: String
+    var goalDescription: String
     
     var goal: String {
         "\(goalTitle) : \(goalDescription)"

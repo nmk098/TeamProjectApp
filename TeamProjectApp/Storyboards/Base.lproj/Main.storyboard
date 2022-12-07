@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="1480" y="-447.15639810426541"/>
         </scene>
-        <!--Main screen-->
+        <!--MainPage-->
         <scene sceneID="VBD-cT-mYG">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" title="MainPage" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kw-dM-JZT" customClass="MainScreenViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucc-bE-L9l">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,6 +154,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
+                    <connections>
+                        <outlet property="bioButton" destination="3qG-wA-Jel" id="Suv-X3-mEd"/>
+                        <outlet property="goalsButton" destination="c2P-wP-3Ja" id="4CB-sv-C5X"/>
+                        <outlet property="lessonsButton" destination="2uc-xG-eE3" id="2hr-4m-Zd9"/>
+                        <outlet property="notesButton" destination="ebh-cp-bmH" id="MEc-Z0-Nkb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
