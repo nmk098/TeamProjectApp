@@ -55,10 +55,5 @@ class GoalsListTableViewController: UITableViewController {
     }
     
 }
-extension GoalsListTableViewController {
-    func getNewGoal(title: String?, description: String?) {
-        [Goals(goalTitle: title!, goalDescription: description!)]
-    }
-}
 
 

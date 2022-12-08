@@ -23,7 +23,6 @@
 		C67A2C612938D508004E93D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C602938D508004E93D0 /* Assets.xcassets */; };
 		C67A2C642938D508004E93D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C622938D508004E93D0 /* LaunchScreen.storyboard */; };
 		C67A2C6C2938D9C6004E93D0 /* GoalsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */; };
-		C6A097D52940F983005E2F1F /* AddingGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */; };
 		C6A097D72940FA08005E2F1F /* GoalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A097D62940FA08005E2F1F /* GoalsList.swift */; };
 		C6B0052329411A150087845D /* GoalsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0052229411A150087845D /* GoalsDetailsViewController.swift */; };
 		C6C16F54293BDD4A00F1B5FF /* GoalsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */; };
@@ -57,12 +56,11 @@
 		C67A2C632938D508004E93D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C67A2C652938D508004E93D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67A2C6B2938D9C6004E93D0 /* GoalsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoalsList.storyboard; sourceTree = "<group>"; };
-		C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingGoalViewController.swift; sourceTree = "<group>"; };
 		C6A097D62940FA08005E2F1F /* GoalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsList.swift; sourceTree = "<group>"; };
 		C6B0052229411A150087845D /* GoalsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailsViewController.swift; sourceTree = "<group>"; };
 		C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewController.swift; sourceTree = "<group>"; };
 		FA70B3B02941040A0000435A /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
-		FA70B3B22941046E0000435A /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesTableViewController.swift; path = TeamProjectApp/NotesTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FA70B3B22941046E0000435A /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesTableViewController.swift; path = "TeamProjectApp/NotesVC's/NotesTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FA70B3B4294104A30000435A /* CreatingNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingNotesViewController.swift; sourceTree = "<group>"; };
 		FA70B3B6294104BD0000435A /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		FAD48EBC293A4323007A963E /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -136,14 +134,9 @@
 				C67A2C592938D507004E93D0 /* SceneDelegate.swift */,
 				C67A2C5B2938D507004E93D0 /* LogInViewController.swift */,
 				FAD48EBC293A4323007A963E /* MainScreenViewController.swift */,
-				FAD48EC0293B4D72007A963E /* LessonsViewController.swift */,
-				FAD48EC4293B4E36007A963E /* LessonsDetailsViewController.swift */,
-				C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */,
-				C6A097D42940F983005E2F1F /* AddingGoalViewController.swift */,
-				C6B0052229411A150087845D /* GoalsDetailsViewController.swift */,
-				FA70B3B22941046E0000435A /* NotesTableViewController.swift */,
-				FA70B3B4294104A30000435A /* CreatingNotesViewController.swift */,
-				FA70B3B6294104BD0000435A /* EntryViewController.swift */,
+				C6B00535294197960087845D /* LessonsVC's */,
+				C6B00536294197AA0087845D /* GoalsVC's */,
+				C6B00534294197820087845D /* NotesVC's */,
 				FAD48EC8293B4EEA007A963E /* Models */,
 				C67A2C6D2938D9D1004E93D0 /* Storyboards */,
 				C67A2C602938D508004E93D0 /* Assets.xcassets */,
@@ -164,6 +157,34 @@
 				04BE2E2D293E144300D60041 /* Profile.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C6B00534294197820087845D /* NotesVC's */ = {
+			isa = PBXGroup;
+			children = (
+				FA70B3B22941046E0000435A /* NotesTableViewController.swift */,
+				FA70B3B4294104A30000435A /* CreatingNotesViewController.swift */,
+				FA70B3B6294104BD0000435A /* EntryViewController.swift */,
+			);
+			path = "NotesVC's";
+			sourceTree = "<group>";
+		};
+		C6B00535294197960087845D /* LessonsVC's */ = {
+			isa = PBXGroup;
+			children = (
+				FAD48EC0293B4D72007A963E /* LessonsViewController.swift */,
+				FAD48EC4293B4E36007A963E /* LessonsDetailsViewController.swift */,
+			);
+			path = "LessonsVC's";
+			sourceTree = "<group>";
+		};
+		C6B00536294197AA0087845D /* GoalsVC's */ = {
+			isa = PBXGroup;
+			children = (
+				C6C16F53293BDD4A00F1B5FF /* GoalsListTableViewController.swift */,
+				C6B0052229411A150087845D /* GoalsDetailsViewController.swift */,
+			);
+			path = "GoalsVC's";
 			sourceTree = "<group>";
 		};
 		FAD48EC8293B4EEA007A963E /* Models */ = {
@@ -256,7 +277,6 @@
 				FA70B3B7294104BD0000435A /* EntryViewController.swift in Sources */,
 				C6A097D72940FA08005E2F1F /* GoalsList.swift in Sources */,
 				FAD48EC1293B4D72007A963E /* LessonsViewController.swift in Sources */,
-				C6A097D52940F983005E2F1F /* AddingGoalViewController.swift in Sources */,
 				FAD48EBD293A4323007A963E /* MainScreenViewController.swift in Sources */,
 				C6B0052329411A150087845D /* GoalsDetailsViewController.swift in Sources */,
 				043158842940E3090003AF1E /* DataPersone.swift in Sources */,
