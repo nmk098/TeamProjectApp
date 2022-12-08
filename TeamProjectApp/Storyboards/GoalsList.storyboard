@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="GoalsList" title="GoalListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="raQ-Yu-mzX" customClass="GoalsListTableViewController" customModule="TeamProjectApp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uhV-bz-c2x">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
@@ -56,95 +56,12 @@
                                 <action selector="cancelButtonTapped:" destination="raQ-Yu-mzX" id="dTR-bQ-c0Q"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="Tc9-cY-gal">
-                            <connections>
-                                <segue destination="5yc-jt-h0z" kind="show" id="Vcm-3l-23l"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="Tc9-cY-gal"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lzf-Ek-GYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2135" y="-151"/>
-        </scene>
-        <!--Adding Goal View Controller-->
-        <scene sceneID="3VP-Up-ieJ">
-            <objects>
-                <viewController id="5yc-jt-h0z" customClass="AddingGoalViewController" customModule="TeamProjectApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iwO-4h-zjd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Добавьте цель!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKQ-6W-QDV">
-                                <rect key="frame" x="80" y="139" width="233" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Опишите цель в трех словах!.. можно больше" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grh-XF-q8h">
-                                <rect key="frame" x="40" y="252.99999999999997" width="313" height="109.66666666666666"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="grh-XF-q8h" secondAttribute="height" multiplier="97:34" id="jQd-ey-seq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-eB-nVn">
-                                <rect key="frame" x="166" y="442.66666666666669" width="61" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="6wJ-nv-2J6"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
-                                <connections>
-                                    <action selector="saveButtonPressed:" destination="5yc-jt-h0z" eventType="touchUpInside" id="cxy-9w-Ej5"/>
-                                    <action selector="saveButtonTapped:" destination="5yc-jt-h0z" eventType="touchUpInside" id="bi9-DK-Wxo"/>
-                                    <segue destination="raQ-Yu-mzX" kind="replace" splitViewControllerTargetIndex="1" id="dge-Le-jrZ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9gI-8C-nGL"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                        <constraints>
-                            <constraint firstItem="GKQ-6W-QDV" firstAttribute="leading" secondItem="9gI-8C-nGL" secondAttribute="leading" constant="80" id="Hx3-Gd-5TY"/>
-                            <constraint firstItem="grh-XF-q8h" firstAttribute="leading" secondItem="9gI-8C-nGL" secondAttribute="leading" constant="40" id="K3q-np-7us"/>
-                            <constraint firstItem="GKQ-6W-QDV" firstAttribute="centerX" secondItem="iwO-4h-zjd" secondAttribute="centerX" id="V0X-S1-djJ"/>
-                            <constraint firstItem="ZUC-eB-nVn" firstAttribute="top" secondItem="grh-XF-q8h" secondAttribute="bottom" constant="80" id="XTl-pn-rzf"/>
-                            <constraint firstItem="grh-XF-q8h" firstAttribute="top" secondItem="GKQ-6W-QDV" secondAttribute="bottom" constant="80" id="ZeI-4O-WQB"/>
-                            <constraint firstItem="GKQ-6W-QDV" firstAttribute="top" secondItem="9gI-8C-nGL" secondAttribute="top" constant="80" id="iX6-EA-V3e"/>
-                            <constraint firstItem="ZUC-eB-nVn" firstAttribute="centerX" secondItem="iwO-4h-zjd" secondAttribute="centerX" id="its-Ta-s0O"/>
-                            <constraint firstItem="grh-XF-q8h" firstAttribute="centerX" secondItem="iwO-4h-zjd" secondAttribute="centerX" id="oNG-Tr-aeu"/>
-                            <constraint firstItem="9gI-8C-nGL" firstAttribute="trailing" secondItem="GKQ-6W-QDV" secondAttribute="trailing" constant="80" id="rMu-GC-yg2"/>
-                            <constraint firstItem="9gI-8C-nGL" firstAttribute="trailing" secondItem="grh-XF-q8h" secondAttribute="trailing" constant="40" id="sbL-O5-64U"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="GPH-Ic-IOK"/>
-                    <connections>
-                        <outlet property="goalDescriptionTF" destination="grh-XF-q8h" id="WlC-Ju-He5"/>
-                        <outlet property="goalTitleTF" destination="GKQ-6W-QDV" id="srU-AJ-NsB"/>
-                        <outlet property="saveGoalButton" destination="ZUC-eB-nVn" id="WvK-Ly-qQU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vjl-2Y-NDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4060.3053435114502" y="561.97183098591552"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="NnN-Gf-15n">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VXN-Vk-Dgq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="32Z-qI-TMX">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5yc-jt-h0z" kind="relationship" relationship="rootViewController" id="3nx-SO-iAG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t95-xy-QMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3117" y="-151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eBB-Jh-E83">
@@ -207,10 +124,6 @@
             <point key="canvasLocation" x="3060.3053435114502" y="561.26760563380287"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Vcm-3l-23l"/>
-        <segue reference="dge-Le-jrZ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
